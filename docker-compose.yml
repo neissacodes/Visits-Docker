@@ -5,6 +5,7 @@ services:
     image: 'redis'
 
   node-app:
+    #restart: on-failure
     build: . 
     #To open the project on the local machine
     ports:
