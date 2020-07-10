@@ -1,9 +1,11 @@
 version: '3'
+#Creates both containers
 services: 
   redis-server:
     image: 'redis'
 
   node-app:
     build: . 
+    #To open the project on the local machine
     ports:
       - "4001:8081"
