@@ -8,7 +8,7 @@ const client = redis.createClient({
         Connect the client server to redis
     */
     host: 'redis-server',
-    port: 3679
+    port: 6379
 });
 
 client.set('visits', 0);
